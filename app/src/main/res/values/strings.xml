@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Manual Moodle</string>
+
+    //pantalla de inicio
+    <string name="mestudiante">Manual Estudiante</string>
+    <string name="mprofesor">Manual Docente</string>
+
+    //pantalla estudiante
+    <string name="title_activity_manual_estudiante">Manual Estudiante</string>
+    <string name="tab_text_video">video</string>
+    <string name="tab_text_pdf">PDF</string>
+    <string name="tab_text_favoritos">Favoritos</string>
+    <string name="action_help_estudiante">Ayuda</string>
+
+    <string name="section_format_estudiante">Hello World from section: %1$d</string>
+
+    //pantalla docente
+    <string name="title_activity_manual_docente">Manual Docente</string>
+    <string name="tab_text_video_docente">video</string>
+    <string name="tab_text_pdf_docente">PDF</string>
+    <string name="tab_text_favoritos_docente">Favoritos</string>
+    <string name="action_help_docente">Ayuda</string>
+    <string name="section_format_docente">Hello World from section: %1$d</string>
+
+</resources>
