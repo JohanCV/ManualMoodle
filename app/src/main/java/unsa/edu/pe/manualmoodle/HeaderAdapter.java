@@ -40,7 +40,7 @@ public class HeaderAdapter extends RecyclerView.Adapter<HeaderAdapter.ViewHolder
                                                    int viewType) {
         // create a new view
         TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_header, parent, false);
+                .inflate(R.layout.fragment_manual_docente, parent, false);
 
         return new ViewHolder(v);
     }
