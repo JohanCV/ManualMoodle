@@ -14,15 +14,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /** llamando al btn sendMEstudiante */
-    public void sendMEstudiante(View view) {
-        Intent intent = new Intent(this, ManualEstudiante.class);
-
-        startActivity(intent);
-    }
-
-    /** llamando al btn sendMDocente */
-    public void sendMDocente(View view) {
-        Intent intent = new Intent(this, ManualDocente.class);
+    public void clickMEstudiante(View view) {
+        Intent intent = new Intent(this, MainActivityEstudiante.class);
 
         startActivity(intent);
     }
