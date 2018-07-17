@@ -2,6 +2,9 @@
     <string name="app_name">Manual Moodle</string>
 
     //pantalla de inicio
+    <string name="dutic">BIENVENIDOS</string>
+
+    //navegacion
     <string name="mestudiante">Manual Estudiante</string>
     <string name="mprofesor">Manual Docente</string>
 

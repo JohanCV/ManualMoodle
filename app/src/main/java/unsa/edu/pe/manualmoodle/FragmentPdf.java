@@ -17,7 +17,7 @@ public class FragmentPdf extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.pdf_fragment,container,false);
+        v = inflater.inflate(R.layout.pdf_fragment_estudiante,container,false);
         return v;
     }
 }

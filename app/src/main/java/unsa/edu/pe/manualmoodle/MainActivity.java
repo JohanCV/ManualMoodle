@@ -4,20 +4,47 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    private View view;
+    private ImageView img;
+    private TextView texto;
+    private Button btnEstudiante, btnDocente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        img = findViewById(R.id.img_dutic);
+        texto = findViewById(R.id.text_bienvenida);
+        btnEstudiante = findViewById(R.id.btn_estudiante);
+        btnDocente = findViewById(R.id.btn_docente);
+
+        Animation myanimacion = AnimationUtils.loadAnimation(this, R.anim.transition_start);
+        img.startAnimation(myanimacion);
+        texto.startAnimation(myanimacion);
+        btnEstudiante.startAnimation(myanimacion);
+        btnDocente.startAnimation(myanimacion);
     }
 
     /** llamando al btn sendMEstudiante */
-    public void clickMEstudiante(View view) {
-        Intent intent = new Intent(this, MainActivityEstudiante.class);
+    public void clickME(View view) {
+        Intent i = null;
 
-        startActivity(intent);
+        switch (view.getId()){
+            case R.id.btn_estudiante:
+                i = new Intent(this, MainActivityEstudiante.class);
+                break;
+            case R.id.btn_docente:
+                i = new Intent(this, MainActivityDocente.class);
+                break;
+        }
+        startActivity(i);
     }
 
 }
