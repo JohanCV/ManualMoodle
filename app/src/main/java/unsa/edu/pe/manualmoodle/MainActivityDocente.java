@@ -22,8 +22,8 @@ public class MainActivityDocente extends AppCompatActivity {
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         //Agregamos los fragment
-        adapter.AddFragment(new FragmentVideo(),"");
-        adapter.AddFragment(new FragmentPdf(), "");
+        adapter.AddFragment(new FragmentVideoDocent(),"");
+        adapter.AddFragment(new FragmentPdfDocent(), "");
 
         //lea la vista
         viewPager.setAdapter(adapter);
