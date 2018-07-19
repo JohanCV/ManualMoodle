@@ -1,5 +1,6 @@
 package unsa.edu.pe.manualmoodle;
 
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,14 +9,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import java.io.File;
 import java.util.ArrayList;
-import java.util.List;
 
 public class FragmentPdfDocent extends Fragment {
 
     View v;
     private RecyclerView myrecyclerview;
-    private List<PdfDoc> listPdfDocent;
+    //private List<PdfDoc> listPdfDocent;
 
 
     public FragmentPdfDocent() {
@@ -27,32 +28,52 @@ public class FragmentPdfDocent extends Fragment {
         v = inflater.inflate(R.layout.pdf_fragment_docente,container,false);
 
         myrecyclerview = v.findViewById(R.id.recyclerpdfview_docente);
-        CustomAdapterPDF recyclerAdapter = new CustomAdapterPDF(getContext(), listPdfDocent);
+       // CustomAdapterPDF recyclerAdapter = new CustomAdapterPDF(MainActivityDocente.class, getPDFs());
         myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
-        myrecyclerview.setAdapter(recyclerAdapter);
+       // myrecyclerview.setAdapter(recyclerAdapter);
+
+
         return v;
     }
 
+
+
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        listPdfDocent = new ArrayList<>();
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 1:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 2:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 3:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 4:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 5:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 6:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 7:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 8:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 9:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 10:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 11:","Como acceder y personalizar tu aula virtual"));
-        listPdfDocent.add(new PdfDoc(R.drawable.pdf_icon,"Tutorial Docente 12:","Como acceder y personalizar tu aula virtual"));
 
+    }
 
+    private ArrayList<PdfDoc> getPDFs(){
+        ArrayList<PdfDoc> pdfDocs=new ArrayList<>();
+        //TARGET FOLDER
+        File downloadsFolder= Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
 
+        PdfDoc pdfDoc;
 
+        if(downloadsFolder.exists())
+        {
+            //GET ALL FILES IN DOWNLOAD FOLDER
+            File[] files=downloadsFolder.listFiles();
+
+            //LOOP THRU THOSE FILES GETTING NAME AND URI
+            for (int i=0;i<files.length;i++)
+            {
+                File file=files[i];
+
+                if(file.getPath().endsWith("pdf"))
+                {
+                    pdfDoc=new PdfDoc();
+                    pdfDoc.setName_doc(file.getName());
+                    pdfDoc.setPath_pdf(file.getAbsolutePath());
+
+                    pdfDocs.add(pdfDoc);
+                }
+
+            }
+        }
+
+        return pdfDocs;
     }
 }

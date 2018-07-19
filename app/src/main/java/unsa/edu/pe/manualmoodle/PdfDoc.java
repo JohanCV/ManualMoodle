@@ -2,24 +2,14 @@ package unsa.edu.pe.manualmoodle;
 
 public class PdfDoc {
     String name_doc;
-    String path;
-    int imagen;
+    String path_pdf;
 
     public PdfDoc() {
     }
 
-    public PdfDoc(int img, String name_doc, String path) {
-        this.imagen = img;
-        this.name_doc = name_doc;
-        this.path = path;
-    }
-
-    public int getImagen() {
-        return imagen;
-    }
-
-    public void setImagen(int imagen) {
-        this.imagen = imagen;
+    public PdfDoc(String path_pdf, String name) {
+        this.path_pdf = path_pdf;
+        this.name_doc = name;
     }
 
     public String getName_doc() {
@@ -30,11 +20,13 @@ public class PdfDoc {
         this.name_doc = name_doc;
     }
 
-    public String getPath() {
-        return path;
+    public String getPath_pdf() {
+        return path_pdf;
     }
 
-    public void setPath(String path) {
-        this.path = path;
+    public void setPath_pdf(String path_pdf) {
+        this.path_pdf = path_pdf;
     }
+
+
 }

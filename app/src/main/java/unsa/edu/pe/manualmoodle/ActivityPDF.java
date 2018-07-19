@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.github.barteksc.pdfviewer.PDFView;
-import com.github.barteksc.pdfviewer.ScrollBar;
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
 
 import java.io.File;
+
 
 public class ActivityPDF extends AppCompatActivity {
 
@@ -21,10 +21,10 @@ public class ActivityPDF extends AppCompatActivity {
         //PDFVIEW SHALL DISPLAY OUR PDFS
         PDFView pdfView= (PDFView) findViewById(R.id.pdfView);
         //SCROLLBAR TO ENABLE SCROLLING
-        ScrollBar scrollBar = (ScrollBar) findViewById(R.id.scrollBar);
-        pdfView.setScrollBar(scrollBar);
+        //ScrollBar scrollBar = (ScrollBar) findViewById(R.id.scrollBar);
+        //pdfView.setScrollBar(scrollBar);
         //VERTICAL SCROLLING
-        scrollBar.setHorizontal(false);
+        //scrollBar.setHorizontal(false);
         //SACRIFICE MEMORY FOR QUALITY
         //pdfView.useBestQuality(true)
 
@@ -38,16 +38,45 @@ public class ActivityPDF extends AppCompatActivity {
         if(file.canRead())
         {
             //LOAD IT
-
             pdfView.fromFile(file).defaultPage(1).onLoad(new OnLoadCompleteListener() {
                 @Override
                 public void loadComplete(int nbPages) {
                     Toast.makeText(ActivityPDF.this, String.valueOf(nbPages), Toast.LENGTH_LONG).show();
                 }
-            }).load();
+
+        }).load();
 
         }
+
     }
+
+    /*
+    class RetrievePDFStream extends AsyncTask<String , Void , InputStream>{
+
+        @Override
+        protected InputStream doInBackground(String... strings) {
+
+            InputStream inputStream = null;
+
+            try {
+                URL url =  new URL(strings[0]);
+                HttpURLConnection urlConnection = (HttpURLConnection)url.openConnection();
+                if(urlConnection.getResponseCode() == 200){
+                    inputStream = new BufferedInputStream(urlConnection.getInputStream());
+                }
+
+            }catch (IOException e){
+                return null;
+            }
+
+            return inputStream;
+        }
+
+        @Override
+        protected void onPostExecute(InputStream inputStream) {
+            pdfView.fromStream(inputStream).load();
+        }
+    }*/
 }
 
 
