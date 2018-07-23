@@ -3,13 +3,15 @@ package unsa.edu.pe.manualmoodle;
 public class PdfDoc {
     String name_doc;
     String path_pdf;
+    String btn_ver;
 
     public PdfDoc() {
     }
 
-    public PdfDoc(String path_pdf, String name) {
+    public PdfDoc(String path_pdf, String name, String ver) {
         this.path_pdf = path_pdf;
         this.name_doc = name;
+        this.btn_ver = ver;
     }
 
     public String getName_doc() {
@@ -28,5 +30,11 @@ public class PdfDoc {
         this.path_pdf = path_pdf;
     }
 
+    public String getBtn_ver() {
+        return btn_ver;
+    }
 
+    public void setBtn_ver(String btn_ver) {
+        this.btn_ver = btn_ver;
+    }
 }

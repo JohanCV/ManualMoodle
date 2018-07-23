@@ -3,13 +3,7 @@ package unsa.edu.pe.manualmoodle;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
-
 import com.github.barteksc.pdfviewer.PDFView;
-import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
-
-import java.io.File;
-
 
 public class ActivityPDF extends AppCompatActivity {
 
@@ -17,66 +11,23 @@ public class ActivityPDF extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf);
+        PDFView pdfView=  findViewById(R.id.pdfView);
 
-        //PDFVIEW SHALL DISPLAY OUR PDFS
-        PDFView pdfView= (PDFView) findViewById(R.id.pdfView);
-        //SCROLLBAR TO ENABLE SCROLLING
-        //ScrollBar scrollBar = (ScrollBar) findViewById(R.id.scrollBar);
-        //pdfView.setScrollBar(scrollBar);
-        //VERTICAL SCROLLING
-        //scrollBar.setHorizontal(false);
-        //SACRIFICE MEMORY FOR QUALITY
-        //pdfView.useBestQuality(true)
-
-        //UNPACK OUR DATA FROM INTENT
         Intent i=this.getIntent();
         String path=i.getExtras().getString("PATH");
 
-        //GET THE PDF FILE
-        File file=new File(path);
-
-        if(file.canRead())
-        {
-            //LOAD IT
-            pdfView.fromFile(file).defaultPage(1).onLoad(new OnLoadCompleteListener() {
-                @Override
-                public void loadComplete(int nbPages) {
-                    Toast.makeText(ActivityPDF.this, String.valueOf(nbPages), Toast.LENGTH_LONG).show();
-                }
-
-        }).load();
-
-        }
+        pdfView.fromAsset(path) // all pages are displayed by default
+                .enableSwipe(true) // allows to block changing pages using swipe
+                .swipeHorizontal(false)
+                .enableDoubletap(true)
+                .defaultPage(0)
+                .enableAnnotationRendering(false) // render annotations (such as comments, colors or forms)
+                .password(null)
+                .scrollHandle(null)
+                .load();
 
     }
 
-    /*
-    class RetrievePDFStream extends AsyncTask<String , Void , InputStream>{
-
-        @Override
-        protected InputStream doInBackground(String... strings) {
-
-            InputStream inputStream = null;
-
-            try {
-                URL url =  new URL(strings[0]);
-                HttpURLConnection urlConnection = (HttpURLConnection)url.openConnection();
-                if(urlConnection.getResponseCode() == 200){
-                    inputStream = new BufferedInputStream(urlConnection.getInputStream());
-                }
-
-            }catch (IOException e){
-                return null;
-            }
-
-            return inputStream;
-        }
-
-        @Override
-        protected void onPostExecute(InputStream inputStream) {
-            pdfView.fromStream(inputStream).load();
-        }
-    }*/
 }
 
 

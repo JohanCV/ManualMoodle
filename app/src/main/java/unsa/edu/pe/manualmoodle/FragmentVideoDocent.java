@@ -38,8 +38,8 @@ public class FragmentVideoDocent extends Fragment {
         super.onCreate(savedInstanceState);
 
         listVideoDocent = new ArrayList<>();
-        listVideoDocent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Docente 1:","Como acceder y personalizar tu aula virtual"));
-        listVideoDocent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Docente 2:","Como acceder y personalizar tu aula virtual"));
+        listVideoDocent.add(new Video("<iframe width=\"330\" height=\"180\"  src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen='true'></iframe>","Tutorial Docente 1:","Como acceder y personalizar tu aula virtual"));
+        listVideoDocent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen='true'></iframe>","Tutorial Docente 2:","Como acceder y personalizar tu aula virtual"));
         listVideoDocent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Docente 3:","Como acceder y personalizar tu aula virtual"));
         listVideoDocent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Docente 4:","Como acceder y personalizar tu aula virtual"));
         listVideoDocent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Docente 5:","Como acceder y personalizar tu aula virtual"));
