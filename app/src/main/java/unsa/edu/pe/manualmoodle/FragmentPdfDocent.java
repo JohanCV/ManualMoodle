@@ -47,8 +47,14 @@ public class FragmentPdfDocent extends Fragment {
         super.onCreate(savedInstanceState);
 
         listPdfDocent = new ArrayList<>();
-        listPdfDocent.add(new PdfDoc("constancia.pdf","Constancia", "LEER"));
-        listPdfDocent.add(new PdfDoc("Thesis_REACT.pdf","REACT", "LEER"));
-        listPdfDocent.add(new PdfDoc("HangoutsSilabo.pdf","Hangouts", "LEER"));
+        listPdfDocent.add(new PdfDoc("tutorial0.pdf","Manual Completo uso de Aulas", "Se muestra el manejo y configuracion del aula virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial2.pdf","1. Manual: Ingresando al Aula Virtual", "El docente podra ingresar al Aula Virtual para facilitar el acceso a la plataforma Moodle."));
+        listPdfDocent.add(new PdfDoc("tutorial1.pdf","2. Manual: Cambiando la contraseña del Aula Virtual", "El docente podra cambiar la contraseña de su Aula Virtual para así facilitar el manejo de la plataforma Moodle."));
+        listPdfDocent.add(new PdfDoc("tutorial3.pdf","3. Manual: Configurando Temas", "El docente podra realizar la configuracion de los temas, configurando los temas del curso virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial4.pdf","4. Manual: Subiendo archivos", "El docente podra realizar la suba de archivos, para elmanejo de su aula virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial5.pdf","5. Manual: Compartiendo Videos (recursos de Internet)", "El docente podra utilizar los recursos por internet, en especial copartiendo videos."));
+        listPdfDocent.add(new PdfDoc("tutorial6.pdf","6. Manual: Creando un Foro", "El docente podra crear un foro y configurar para el uso de su aula virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial7.pdf","7. Manual: Agregando Alumnos al Aula", "El docente podra agregar alumnos a su aula virtual"));
+        listPdfDocent.add(new PdfDoc("tutorial8.pdf","8. Manual: Agregando profesores: Cátedra Compartida", "El docente podra agregar en el curso virtual una catedra compartida entre los docentes."));
     }
 }

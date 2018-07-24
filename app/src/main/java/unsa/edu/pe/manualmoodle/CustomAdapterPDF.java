@@ -12,7 +12,6 @@ public class CustomAdapterPDF extends RecyclerView.Adapter<CustomAdapterPDF.MyVi
         implements View.OnClickListener{
 
     ArrayList<PdfDoc> mData;
-
     private View.OnClickListener listener;
 
     public CustomAdapterPDF(ArrayList<PdfDoc> mData) {

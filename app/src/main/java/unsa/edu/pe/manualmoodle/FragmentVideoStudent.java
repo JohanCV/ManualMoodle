@@ -39,23 +39,7 @@ public class FragmentVideoStudent extends Fragment {
         super.onCreate(savedInstanceState);
 
         listVideoStudent = new ArrayList<>();
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 1:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 2:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 3:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 4:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 5:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 6:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 7:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 8:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 9:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 10:","Como acceder y personalizar tu aula virtual"));
-        listVideoStudent.add(new Video("<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","Tutorial Estudiante 11:","Como acceder y personalizar tu aula virtual"));
 
-
-
-
-
-
-    }
+        listVideoStudent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","1. Tutorial Estudiante:","Como acceder y personalizar tu aula virtual"));}
     
 }
