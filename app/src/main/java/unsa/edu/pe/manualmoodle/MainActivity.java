@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher_round);
+
         img = findViewById(R.id.img_dutic);
         texto = findViewById(R.id.text_bienvenida);
         btnEstudiante = findViewById(R.id.btn_estudiante);

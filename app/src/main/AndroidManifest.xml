@@ -27,6 +27,7 @@
         </activity>
         <activity
             android:name=".MainActivityEstudiante"
+            android:label="@string/title_activity_manual_estudiante"
             android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -36,6 +37,7 @@
         </activity>
         <activity
             android:name=".MainActivityDocente"
+            android:label="@string/title_activity_manual_docente"
             android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
