@@ -20,4 +20,6 @@
     <string name="tab_text_video_docente">video</string>
     <string name="tab_text_pdf_docente">PDF</string>
 
+    <string name="pagina_dutic">Aula Virtual</string>
+
 </resources>

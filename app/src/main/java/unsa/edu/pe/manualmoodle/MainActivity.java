@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private View view;
     private ImageView img;
     private TextView texto;
-    private Button btnEstudiante, btnDocente;
+    private Button btnEstudiante, btnDocente, btnAulavirtual;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +27,14 @@ public class MainActivity extends AppCompatActivity {
         texto = findViewById(R.id.text_bienvenida);
         btnEstudiante = findViewById(R.id.btn_estudiante);
         btnDocente = findViewById(R.id.btn_docente);
+        btnAulavirtual = findViewById(R.id.btn_pag_dutic);
 
         Animation myanimacion = AnimationUtils.loadAnimation(this, R.anim.transition_start);
         img.startAnimation(myanimacion);
         texto.startAnimation(myanimacion);
         btnEstudiante.startAnimation(myanimacion);
         btnDocente.startAnimation(myanimacion);
+        btnAulavirtual.startAnimation(myanimacion);
     }
 
     /** llamando al btn sendMEstudiante */
@@ -46,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_docente:
                 i = new Intent(this, MainActivityDocente.class);
                 break;
+            case R.id.btn_pag_dutic:
+
+                i = new Intent(this, MainActivityAulaVirtual.class);
         }
         startActivity(i);
     }

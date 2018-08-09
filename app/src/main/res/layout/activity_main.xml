@@ -17,7 +17,6 @@
 
         <TextView
             android:id="@+id/text_bienvenida"
-            android:layout_marginTop="25dp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,7 +37,7 @@
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:onClick="clickME"
             android:text="@string/mestudiante"
             android:background="#fff"
@@ -54,7 +53,7 @@
             android:id="@+id/btn_docente"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:text="@string/mprofesor"
             android:onClick="clickME"
 
@@ -63,6 +62,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_estudiante" />
+
+        <Button
+            android:id="@+id/btn_pag_dutic"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/pagina_dutic"
+            android:onClick="clickME"
+            android:background="#fff"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_aulavirtual" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
