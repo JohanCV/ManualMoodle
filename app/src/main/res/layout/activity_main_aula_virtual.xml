@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivityAulaVirtual">
 
+    <ProgressBar
+        android:id="@+id/progresbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:theme="@style/ProgressBarTheme"/>
+
     <WebView
         android:id="@+id/aula_web"
         android:layout_width="match_parent"
