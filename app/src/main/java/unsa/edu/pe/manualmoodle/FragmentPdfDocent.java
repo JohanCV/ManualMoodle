@@ -54,7 +54,10 @@ public class FragmentPdfDocent extends Fragment {
         listPdfDocent.add(new PdfDoc("tutorial4.pdf","4. Manual: Subiendo archivos", "El docente podra realizar la suba de archivos, para elmanejo de su aula virtual."));
         listPdfDocent.add(new PdfDoc("tutorial5.pdf","5. Manual: Compartiendo Videos (recursos de Internet)", "El docente podra utilizar los recursos por internet, en especial copartiendo videos."));
         listPdfDocent.add(new PdfDoc("tutorial6.pdf","6. Manual: Creando un Foro", "El docente podra crear un foro y configurar para el uso de su aula virtual."));
-        listPdfDocent.add(new PdfDoc("tutorial7.pdf","7. Manual: Agregando Alumnos al Aula", "El docente podra agregar alumnos a su aula virtual"));
+        listPdfDocent.add(new PdfDoc("tutorial7.pdf","7. Manual: Matriculando Alumnos al Aula", "El docente podra agregar alumnos a su aula virtual"));
         listPdfDocent.add(new PdfDoc("tutorial8.pdf","8. Manual: Agregando profesores: Cátedra Compartida", "El docente podra agregar en el curso virtual una catedra compartida entre los docentes."));
+        listPdfDocent.add(new PdfDoc("tutorial11.pdf","9. Manual: Dejando una tarea en Cátedra Compartida", "El docente podra dejar tareas en el curso virtual en una catedra compartida."));
+        listPdfDocent.add(new PdfDoc("tutorial10.pdf","10. Manual: Reestableciendo Contraseña", "El usuario podra recuperar su contraseña del aula virtual."));
+
     }
 }

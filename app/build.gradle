@@ -6,8 +6,8 @@ android {
         applicationId "unsa.edu.pe.manualmoodle"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 4
-        versionName "1.2.1"
+        versionCode 7
+        versionName "1.2.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
             abiFilters "armeabi-v7a", "x86"
