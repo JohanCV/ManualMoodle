@@ -40,7 +40,7 @@
             android:layout_marginTop="0dp"
             android:onClick="clickME"
             android:text="@string/mestudiante"
-            android:background="#fff"
+            android:background="@drawable/buttonborder_radius"
 
             android:textColor="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +57,7 @@
             android:text="@string/mprofesor"
             android:onClick="clickME"
 
-            android:background="#fff"
+            android:background="@drawable/buttonborder_radius"
             android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/pagina_dutic"
             android:onClick="clickME"
-            android:background="#fff"
+            android:background="@drawable/buttonborder_radius"
             android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
