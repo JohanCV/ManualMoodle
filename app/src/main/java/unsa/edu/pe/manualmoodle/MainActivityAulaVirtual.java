@@ -49,6 +49,6 @@ public class MainActivityAulaVirtual extends AppCompatActivity {
             public void run() {
                 handler.post(runnable);
             }
-        },5000,5000);
+        },3000,3000);
     }
 }

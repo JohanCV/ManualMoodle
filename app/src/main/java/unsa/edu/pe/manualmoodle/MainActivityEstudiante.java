@@ -22,15 +22,16 @@ public class MainActivityEstudiante extends AppCompatActivity {
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         //Agregamos los fragment
-        adapter.AddFragment(new FragmentVideoStudent(),"");
-        adapter.AddFragment(new FragmentPdfStudent(), "");
+        adapter.AddFragment(new FragmentPdfStudent(), "MANUALES");
+        adapter.AddFragment(new FragmentVideoStudent(),"VIDEOS");
+
 
         //lea la vista
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
         //agregar dibujo al tab
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_video_library);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_picture_as_pdf);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_video_library);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_picture_as_pdf);
     }
 }

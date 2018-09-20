@@ -1,12 +1,9 @@
 package unsa.edu.pe.manualmoodle;
 
-import android.app.PendingIntent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
+import android.content.DialogInterface;
 import android.net.Uri;
-import android.os.Build;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
+import android.os.AsyncTask;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -16,47 +13,20 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements UpdateHelper.OnUpdateCheckListener {
     private View view;
     private ImageView img;
     private TextView texto;
     private Button btnEstudiante, btnDocente, btnAulavirtual;
 
-    NotificationCompat.Builder mNotificaBuider;
-    int notificationid = 3415;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        PackageInfo pinfo = null;
-        try {
-            pinfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
-        int versionCode = pinfo.versionCode;
-        String versionName = pinfo.versionName;
-        if (versionCode != versionCode && versionName != versionName){
-
-            Uri webpage = Uri.parse("https://play.google.com/store/apps/details?id=unsa.edu.pe.manualmoodle");
-            Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
-
-            mNotificaBuider = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.drawable.logodutic)
-                    .setContentTitle("Manual Moodle")
-                    .setContentText("Hay una actualizacion del Manual")
-                    .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                    // Set the intent that will fire when the user taps the notification
-                    .setContentIntent(pendingIntent)
-                    .setAutoCancel(true);
-
-            NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-            notificationManager.notify(notificationid,mNotificaBuider.build());
-        }
 
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -74,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         btnEstudiante.startAnimation(myanimacion);
         btnDocente.startAnimation(myanimacion);
         btnAulavirtual.startAnimation(myanimacion);
+
+        UpdateHelper.with(this).OnUpdateCheck(this).check();
     }
 
     /** llamando al btn sendMEstudiante */
@@ -92,6 +64,30 @@ public class MainActivity extends AppCompatActivity {
                 i = new Intent(this, MainActivityAulaVirtual.class);
         }
         startActivity(i);
+    }
+
+
+
+
+    @Override
+    public void onUpdateCheckListener(final String urlApp) {
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle("New version available")
+                .setMessage("Please, update app to new version to continue reposting.")
+                .setPositiveButton("Update",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(MainActivity.this,""+urlApp,Toast.LENGTH_SHORT).show();
+                            }
+                        }).setNegativeButton("No, thanks",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        }).create();
+        dialog.show();
     }
 
 }
