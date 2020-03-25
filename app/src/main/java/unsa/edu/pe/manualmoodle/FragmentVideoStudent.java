@@ -38,8 +38,10 @@ public class FragmentVideoStudent extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        listVideoStudent = new ArrayList<>();
+        /*listVideoStudent = new ArrayList<>();
 
-        listVideoStudent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","1. Tutorial Estudiante:","Como acceder y personalizar tu aula virtual"));}
+        listVideoStudent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","1. Tutorial Estudiante:","Como acceder y personalizar tu aula virtual"));
+    */
+    }
     
 }

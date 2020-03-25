@@ -27,7 +27,7 @@ public class MainActivityDocente extends AppCompatActivity {
 
         //Agregamos los fragment
         adapter.AddFragment(new FragmentPdfDocent(), "MANUALES");
-        adapter.AddFragment(new FragmentVideoDocent(),"VIDEOS");
+        //adapter.AddFragment(new FragmentVideoDocent(),"VIDEOS");
 
 
         //lea la vista
@@ -36,7 +36,7 @@ public class MainActivityDocente extends AppCompatActivity {
 
         //agregar dibujo al tab
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_picture_as_pdf);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_video_library);
+        //tabLayout.getTabAt(1).setIcon(R.drawable.ic_video_library);
 
 
 

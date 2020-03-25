@@ -47,17 +47,21 @@ public class FragmentPdfDocent extends Fragment {
         super.onCreate(savedInstanceState);
 
         listPdfDocent = new ArrayList<>();
-        listPdfDocent.add(new PdfDoc("tutorial0.pdf","Manual Completo uso de Aulas", "Se muestra el manejo y configuracion del aula virtual."));
-        listPdfDocent.add(new PdfDoc("tutorial2.pdf","1. Manual: Ingresando al Aula Virtual", "El docente podra ingresar al Aula Virtual para facilitar el acceso a la plataforma Moodle."));
-        listPdfDocent.add(new PdfDoc("tutorial1.pdf","2. Manual: Cambiando la contraseña del Aula Virtual", "El docente podra cambiar la contraseña de su Aula Virtual para así facilitar el manejo de la plataforma Moodle."));
-        listPdfDocent.add(new PdfDoc("tutorial3.pdf","3. Manual: Configurando Temas", "El docente podra realizar la configuracion de los temas, configurando los temas del curso virtual."));
-        listPdfDocent.add(new PdfDoc("tutorial4.pdf","4. Manual: Subiendo archivos", "El docente podra realizar la suba de archivos, para elmanejo de su aula virtual."));
-        listPdfDocent.add(new PdfDoc("tutorial5.pdf","5. Manual: Compartiendo Videos (recursos de Internet)", "El docente podra utilizar los recursos por internet, en especial copartiendo videos."));
-        listPdfDocent.add(new PdfDoc("tutorial6.pdf","6. Manual: Creando un Foro", "El docente podra crear un foro y configurar para el uso de su aula virtual."));
-        listPdfDocent.add(new PdfDoc("tutorial7.pdf","7. Manual: Matriculando Alumnos al Aula", "El docente podra agregar alumnos a su aula virtual"));
-        listPdfDocent.add(new PdfDoc("tutorial8.pdf","8. Manual: Agregando profesores: Cátedra Compartida", "El docente podra agregar en el curso virtual una catedra compartida entre los docentes."));
-        listPdfDocent.add(new PdfDoc("tutorial11.pdf","9. Manual: Dejando una tarea en Cátedra Compartida", "El docente podra dejar tareas en el curso virtual en una catedra compartida."));
-        listPdfDocent.add(new PdfDoc("tutorial10.pdf","10. Manual: Reestableciendo Contraseña", "El usuario podra recuperar su contraseña del aula virtual."));
 
+        listPdfDocent.add(new PdfDoc("tutorial9.pdf","1. Manual: Ingresando al Aula Virtual", "El docente podra ingresar al Aula Virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial0.pdf","2. Manual: Agregando Temas", "El docente podra realizar la configuracion de los temas, configurando los temas del curso virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial1.pdf","3. Manual: Agregando Videos", "El docente podra utilizar los recursos por internet, en especial compartiendo videos."));
+        listPdfDocent.add(new PdfDoc("tutorial2.pdf","4. Manual: Agregando URL", "El docente podra utilizar los recursos por internet, en especial direcciones web de otras paginas."));
+        listPdfDocent.add(new PdfDoc("tutorial3.pdf","5. Manual: Subiendo Archivos", "El docente podra realizar la suba de archivos, para el manejo de su aula virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial4.pdf","6. Manual: Creando Foros", "El docente podra crear y configurar un foro, para el uso en su aula virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial5.pdf","7. Manual: Creando Grupos", "El docente podra crear y configurar Grupos con los estudiantes matriculados en su curso."));
+        listPdfDocent.add(new PdfDoc("tutorial6.pdf","8. Manual: Reporte de Calificador", "El docente podra obtener las calificaciones de todos los trabajos."));
+        listPdfDocent.add(new PdfDoc("tutorial7.pdf","9. Manual: Copia de Seguridad del Curso", "El docente podra sacar una copia de seguridad de su curso."));
+        listPdfDocent.add(new PdfDoc("tutorial8.pdf","10. Manual: Restauración del Curso", "El docente podra reestablecer su curso, en cualquier otro curso que se le asigne,  previamente haya realizado una copia de seguriadad."));
+        listPdfDocent.add(new PdfDoc("tutorial10.pdf","11. Manual: Cambio de Contraseña","El docente podra cambiar la contraseña de su Aula Virtual."));
+        listPdfDocent.add(new PdfDoc("tutorial11.pdf","12. Manual: Matriculando Estudiantes", "El docente podra agregar o matricular a estudiantes a su aula virtual"));
+        listPdfDocent.add(new PdfDoc("tutorial12.pdf","13. Manual: Catedra Compartida: Registrando Profesores al Curso", "El docente podra agregar Profesores a su aula virtual, para una Catedra Compartida"));
+        listPdfDocent.add(new PdfDoc("tutorial13.pdf","14. Manual: Creando Cuestionario y Banco de Preguntas", "El docente podra evaluar atravez de cuestionarios."));
+        listPdfDocent.add(new PdfDoc("tutorial15.pdf","15. Manual: Reestableciendo Contraseña", "El docente podra recuperar su contraseña del aula virtual."));
     }
 }

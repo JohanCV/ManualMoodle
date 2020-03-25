@@ -37,7 +37,7 @@ public class FragmentVideoDocent extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        listVideoDocent = new ArrayList<>();
+        /*listVideoDocent = new ArrayList<>();
         listVideoDocent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/JaLzSK8Jbok?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","1. Tutorial Docente:","Como acceder y personalizar tu aula virtual"));
         listVideoDocent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/ZRDCSPyR9dk?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","2. Tutorial Docente:","Como subir contenido al aula virtual"));
         listVideoDocent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/h01aJVRYAUY?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","3. Tutorial Docente:","Como subir archivos a tu aula virtual"));
@@ -47,5 +47,6 @@ public class FragmentVideoDocent extends Fragment {
         listVideoDocent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/e3FZooED08U?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","7. Tutorial Docente:","DEJANDO TAREA"));
         listVideoDocent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/UUCqBPr1KaE?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","8. Tutorial Docente:","CORRIGIENDO TAREAS"));
         listVideoDocent.add(new Video( "<iframe width=\"330\" height=\"180\" src=\"https://www.youtube.com/embed/XfFcrY316Zc?list=PLqtSFRmgPpYHJ8aEU1AXOlGNv5JcmIBvd\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>","9. Tutorial Docente:","como subir material, diapostivias, words, pdf, etc a tu aula virtual"));
+    */
     }
 }

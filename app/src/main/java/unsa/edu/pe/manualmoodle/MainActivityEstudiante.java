@@ -23,7 +23,7 @@ public class MainActivityEstudiante extends AppCompatActivity {
 
         //Agregamos los fragment
         adapter.AddFragment(new FragmentPdfStudent(), "MANUALES");
-        adapter.AddFragment(new FragmentVideoStudent(),"VIDEOS");
+        //adapter.AddFragment(new FragmentVideoStudent(),"VIDEOS");
 
 
         //lea la vista
@@ -31,7 +31,7 @@ public class MainActivityEstudiante extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         //agregar dibujo al tab
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_video_library);
+        //tabLayout.getTabAt(1).setIcon(R.drawable.ic_video_library);
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_picture_as_pdf);
     }
 }

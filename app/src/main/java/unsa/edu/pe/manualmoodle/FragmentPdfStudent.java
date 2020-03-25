@@ -47,10 +47,10 @@ public class FragmentPdfStudent extends Fragment {
         super.onCreate(savedInstanceState);
 
         listPdfStudent = new ArrayList<>();
-        listPdfStudent.add(new PdfDoc("tutorial2.pdf","1. Manual: Ingresando al Aula Virtual", "El alumno podra ingresar al Aula Virtual para facilitar el acceso a la plataforma Moodle."));
-        listPdfStudent.add(new PdfDoc("tutorial1.pdf","2. Manual: Cambiando la contraseña del Aula Virtual", "El alumno podra cambiar la contraseña de su Aula Virtual para así facilitar el manejo de la plataforma Moodle."));
-        listPdfStudent.add(new PdfDoc("tutorial9.pdf","3. Manual: Cómo enviar una Tarea a través del Aula", "Se muestra el manejo y configuracón del aula virtual."));
-        listPdfStudent.add(new PdfDoc("tutorial10.pdf","4. Manual: Reestableciendo Contraseña", "El usuario podra recuperar su contraseña del aula virtual."));
+        listPdfStudent.add(new PdfDoc("tutorial14.pdf","1. Manual: Ingresando al Aula Virtual", "El estudiante podra ingresar al Aula Virtual."));
+        listPdfStudent.add(new PdfDoc("tutorial17.pdf","2. Manual: Cambiando Contraseña", "El estudiante podra cambiar la contraseña de su Aula Virtual."));
+        listPdfStudent.add(new PdfDoc("tutorial16.pdf","3. Manual: Cómo enviar una Tarea", "El estudiante podra enviar tareasa de sus cursos asignados en el aula virtual."));
+        listPdfStudent.add(new PdfDoc("tutorial15.pdf","4. Manual: Recuperar Contraseña", "El estudiante podra recuperar su contraseña del aula virtual."));
 
     }
 }
