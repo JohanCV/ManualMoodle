@@ -1,52 +1,45 @@
 {
   "project_info": {
-    "project_number": "63407655261",
-    "firebase_url": "https://manualmoodle-25e8c.firebaseio.com",
-    "project_id": "manualmoodle-25e8c",
-    "storage_bucket": "manualmoodle-25e8c.appspot.com"
+    "project_number": "464971200866",
+    "firebase_url": "https://aulavirtual-dutic.firebaseio.com",
+    "project_id": "aulavirtual-dutic",
+    "storage_bucket": "aulavirtual-dutic.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:63407655261:android:fac374cb19e9292a",
+        "mobilesdk_app_id": "1:464971200866:android:c3be633432a0299102143b",
         "android_client_info": {
           "package_name": "unsa.edu.pe.manualmoodle"
         }
       },
       "oauth_client": [
         {
-          "client_id": "63407655261-jruiop5n6kealtvc7mvrf781mnfijnec.apps.googleusercontent.com",
+          "client_id": "464971200866-86i8jggmpna2hbmmth9i5o0ipcb9vcuk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "unsa.edu.pe.manualmoodle",
-            "certificate_hash": "27e24b96f3e5e584c71d37689750c020572496df"
+            "certificate_hash": "b78af858645f188abcfae56d905cfe12a70aa4c6"
           }
         },
         {
-          "client_id": "63407655261-cqa72k8ki3is4f6su7rtcat7cmh75pjh.apps.googleusercontent.com",
+          "client_id": "464971200866-lkqbb2rn6s176sorinjjqqll57bftu10.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCxdF5mj8llnNdYmHcranN3k0aQq91JXf4"
+          "current_key": "AIzaSyBPN4sIReNTM-7jpPbC6qp2OJvDq8bSYO4"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "63407655261-cqa72k8ki3is4f6su7rtcat7cmh75pjh.apps.googleusercontent.com",
+              "client_id": "464971200866-lkqbb2rn6s176sorinjjqqll57bftu10.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }
